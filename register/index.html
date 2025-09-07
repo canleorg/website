@@ -133,10 +133,7 @@
     <div class="preloader">
       <button class="vs-btn preloaderCls">Cancel Preloader</button>
       <div class="preloader-inner">
-        <img
-          src="https://res.cloudinary.com/dpc6a18ml/image/upload/v1753266057/canle_logo4_i73tle.png"
-          alt="logo"
-        />
+        <img src="../assets/img/logo.svg" alt="logo" />
         <span class="loader"></span>
       </div>
     </div>
@@ -146,7 +143,7 @@
     <div class="vs-menu-wrapper">
       <div class="vs-menu-area text-center">
         <div class="mobile-logo">
-          <a href="index-2.html"
+          <a href="/"
             ><img src="../assets/img/logo-white2.svg" alt="Carmax" class="logo"
           /></a>
           <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
@@ -154,9 +151,9 @@
         <div class="vs-mobile-menu">
           <ul>
             <li class="menu-item-has-children">
-              <a href="index-2.html">Home</a>
+              <a href="/">Home</a>
               <ul class="sub-menu">
-                <li><a href="index-2.html">Home 1</a></li>
+                <li><a href="/">Home 1</a></li>
                 <li><a href="index-3.html">Home 2</a></li>
                 <li><a href="index-4.html">Home 3</a></li>
               </ul>
@@ -178,7 +175,7 @@
             <li class="menu-item-has-children">
               <a href="#none">Pages</a>
               <ul class="sub-menu">
-                <li><a href="index-2.html">Home 1</a></li>
+                <li><a href="/">Home 1</a></li>
                 <li><a href="index-3.html">Home 2</a></li>
                 <li><a href="index-4.html">Home 3</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -246,10 +243,8 @@
         <div class="widget">
           <div class="vs-widget-about">
             <div class="footer-logo">
-              <a href="index-2.html"
-                ><img
-                  src="https://res.cloudinary.com/dpc6a18ml/image/upload/v1753266057/canle_logo4_i73tle.png"
-                  alt="Canlé"
+              <a href="/"
+                ><img src="../assets/img/logo.svg" alt="Canlé"
               /></a>
             </div>
             <p>
@@ -362,7 +357,7 @@
         </div>
       </div>
     </div>
-   <header class="vs-header">
+    <header class="vs-header">
       <!-- Header Top -->
       <div class="header-top v2">
         <div class="container">
@@ -536,251 +531,180 @@
         </div>
       </div>
     </header>
-    <!--==============================
-    Breadcumb
-    ============================== -->
-    <div
-      class="breadcumb-wrapper"
-      data-bg-src="../assets/img/bg/breadcumb-bg.jpg"
-    >
-      <div class="overlay"></div>
-      <img src="../assets/img/shapes/b-1-1.png" alt="shape" class="shape" />
-      <div class="container z-index-common">
-        <div class="breadcumb-content">
-          <h1 class="breadcumb-title">Faq`s</h1>
-          <div class="breadcumb-menu-wrap">
-            <ul class="breadcumb-menu">
-              <li><a href="../">Home</a></li>
-              <li>Faq`s</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Team -->
-    <div class="space space-extra-bottom">
+
+    <!-- Service Area -->
+    <!-- Login Area -->
+    <section class="space-top space-extra-bottom">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7">
-            <h3 class="sec-title">Frequently Asked Questions</h3>
-            <span class="sec-subtitle">GENERAL</span>
-          </div>
-        </div>
-        <div class="row gy-4 mt-3">
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  1. What is Canlé and what kind of events do you organize?
-                </h5>
-                <p class="card-text">
-                  Canlé is a youth-led platform focused on soft skills, global
-                  exposure, and community building. We organize events such as
-                  Model United Nations (MUNs), diplomatic simulations, cultural
-                  exchanges, career-oriented workshops, and networking mixers.
-                </p>
+          <div class="col-lg-12 mx-auto">
+            <form
+              class="form-style4 ajax-contact mb-50"
+              action="mail.php"
+              method="post"
+            >
+              <h4 class="sec-title h5 mb-25">User</h4>
+              <div class="row gx-20 mb-20">
+                <div class="col-md-6 form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="fname"
+                    id="finame"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="col-md-6 form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="lname"
+                    id="laname"
+                    placeholder="Last Name"
+                  />
+                </div>
+                <div class="col-md-6 form-group">
+                  <input
+                    class="form-control"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email Address"
+                  />
+                </div>
+                <div class="col-md-6 form-group">
+                  <input
+                    class="form-control"
+                    type="number"
+                    name="email"
+                    id="email"
+                    placeholder="Contact number"
+                  />
+                </div>
+                <div class="col-md-6 form-group">
+                  <input
+                    class="form-control"
+                    type="number"
+                    name="email"
+                    id="email"
+                    placeholder="Age"
+                  />
+                </div>
+                <div class="col-md-6 form-group">
+                  <input
+                    class="form-control"
+                    type="textarea"
+                    name="email"
+                    id="email"
+                    placeholder="School/University"
+                  />
+                </div>
+                <div class="col-md-6 form-group">
+                  <input
+                    class="form-control"
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="Specify Semester (For University students)"
+                  />
+                </div>
+                <div class="col-md-6 form-group">
+                  <select
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    tabindex="0"
+                  >
+                    <option value="Event ">Event</option>
+                    <option
+                      value="Canlé X The Diplomatic Club (TDC) : ECHO SPHERE – September 2025"
+                    >
+                      Canlé X The Diplomatic Club (TDC) : ECHO SPHERE –
+                      September 2025
+                    </option>
+                    <option
+                      value="Canlé X The Diplomatic Club (TDC) X OP Jindal: MUN – September "
+                    >
+                      Canlé X The Diplomatic Club (TDC) X OP Jindal: MUN –
+                      September
+                    </option>
+                  </select>
+                </div>
+                <div class="col-lg-4">
+                <div class="d-flex pt-10">
+                  <a href="about.html" class="vs-btn w-100" tabindex="0">
+                   Register Now
+                  </a>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  2. What’s the purpose of your MUN or diplomatic events?
-                </h5>
-                <p class="card-text">
-                  Our events aim to foster public speaking, negotiation,
-                  leadership, and global awareness by simulating real-world
-                  diplomatic scenarios. They also serve as safe spaces for youth
-                  to collaborate, ideate, and grow.
-                </p>
               </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  3. Do I need any prior experience to attend a Canlé event?
-                </h5>
-                <p class="card-text">
-                  Not at all! Most of our events are beginner-friendly. Whether
-                  it’s your first MUN or your tenth, we offer support like
-                  training guides, webinars, and mentorship.
-                </p>
-              </div>
-            </div>
-          </div>
-          <br />
-          <span class="sec-subtitle mt-5"> MUN / DIPLOMATIC EVENTS</span>
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  4. How do I register for the MUN or diplomatic event?
-                </h5>
-                <p class="card-text">
-                  You can register through the official Google Form or website
-                  link shared on our social media. Early registration is
-                  recommended as slots are limited.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  5. What are the committees and agendas?
-                </h5>
-                <p class="card-text">
-                  Committees and agendas are announced prior to the event and
-                  are carefully curated around current global issues. Keep an
-                  eye on our social media and website for updates.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  6. Will I get a certificate for participation?
-                </h5>
-                <p class="card-text">
-                  Yes, all active participants receive certificates.
-                  High-performing delegates may also be awarded Certificates of
-                  Excellence and other recognitions.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">7. What is the dress code?</h5>
-                <p class="card-text">
-                  Formal Western attire is usually expected. Some events may
-                  have themed dress days (e.g., traditional wear reflecting
-                  country colors)—details will be shared in advance.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  8. Can I choose my country or committee?
-                </h5>
-                <p class="card-text">
-                  Yes, there is typically a preference form where you can select
-                  your top committee/country choices. Allotments are made on a
-                  first-come-first-serve basis and delegate strength per
-                  committee.
-                </p>
-              </div>
-            </div>
-          </div>
-          <br />
-          <span class="sec-subtitle mt-5">NETWORKING EVENTS</span>
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  9. What happens at a Canlé networking event?
-                </h5>
-                <p class="card-text">
-                  Our networking mixers are thoughtfully curated spaces to build
-                  connections, share ideas, and explore potential
-                  collaborations. Activities may include speed networking,
-                  theme-based discussion circles, and interactive games.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  10. Do I need to prepare anything in advance?
-                </h5>
-                <p class="card-text">
-                  Not necessarily, but it's always a good idea to bring a
-                  curious mind, a few questions, and if applicable, your
-                  LinkedIn/resume if it’s a career-oriented session.
-                </p>
-              </div>
-            </div>
-          </div>
-           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                 11. Are these events limited to students from specific institutions?
-                </h5>
-                <p class="card-text">
-                  No. Our events are open to university youth from all disciplines and locations unless specified otherwise.
-                </p>
-              </div>
-            </div>
-          </div>
-          <br />
-          <span class="sec-subtitle mt-5">SUPPORT</span>
-           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-               12. Is accommodation provided for outstation participants?
-                </h5>
-                <p class="card-text">
-                  Depending on the event scale and partnerships, we may offer accommodation support or help connect you to nearby options. Check the specific event brochure for details.
-                </p>
-              </div>
-            </div>
-          </div>
-           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  13. Is food provided during the event?
-                </h5>
-                <p class="card-text">
-                Yes, our major events typically include lunch and high-tea. This will be mentioned clearly in the event schedule or delegate kit.
-                </p>
-              </div>
-            </div>
-          </div>
-           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  14. Who do I contact in case of questions?
-                </h5>
-                <p class="card-text">
-                  You can reach out to us at canle.org@gmail.com or contact@thecanle.com DM us on Instagram canle.official.
-                </p>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
+    </section>
+    <!-- Login Area End -->
+    <!-- Newsletter Area -->
+    <div class="newsletter-layout1">
+      <div class="overlay"></div>
+      <div class="container">
+        <form
+          action="https://html.Canlésoft.com/Canlé/demo/mail.php"
+          class="newsletter-form1"
+        >
+          <img
+            src="../assets/img/shapes/ns-1-1.png"
+            alt="shape"
+            class="shape position-absolute top-0 start-0"
+          />
+          <img
+            src="../assets/img/shapes/ns-1-2.png"
+            alt="shape"
+            class="shape position-absolute bottom-0 end-0"
+          />
+          <div class="row g-4 justify-content-between align-items-center">
+            <div class="col-xl-4 col-lg-6">
+              <h2 class="sec-title text-white mb-0">
+                Get A New Experience With
+              </h2>
+            </div>
+            <div class="col-auto">
+              <div class="row gx-3">
+                <div class="col-auto form-group mb-0">
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Enter Your Email"
+                  />
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="col-auto">
+                  <div class="newsletter-button">
+                    <button class="vs-btn style4">Subscribe Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-  <!-- Footer Area -->
+    <!-- Newsletter Area End -->
+    <!-- Footer Area -->
     <footer class="footer-layout2 shape-mockup-wrap">
       <div
         class="shape-mockup d-none d-xl-block z-index-negative"
         data-top="0%"
         data-left="0%"
       >
-        <img src="../assets/img/shapes/footer-2-1.png" alt="footer shape" />
+        <img src="/assets/img/shapes/footer-2-1.png" alt="footer shape" />
       </div>
       <div
         class="shape-mockup d-none d-xl-block z-index-negative"
         data-bottom="0%"
         data-right="0%"
       >
-        <img src="../assets/img/shapes/footer-2-2.png" alt="footer shape" />
+        <img src="/assets/img/shapes/footer-2-2.png" alt="footer shape" />
       </div>
       <div class="widget-area">
         <div class="container">
@@ -788,10 +712,10 @@
             <div class="col-md-6 col-lg-4 col-xl-auto">
               <div class="widget footer-widget">
                 <h3 class="widget_title">
-                  About  Canlé<img src="../assets/img/shapes/d-1-1.svg" />
+                  About Canlé<img src="assets/img/shapes/d-1-1.svg" />
                 </h3>
                 <div class="footer-logo">
-                  <a href="index-2.html"
+                  <a href="/"
                     ><img
                       src="https://res.cloudinary.com/dpc6a18ml/image/upload/v1753266057/canle_logo4_i73tle.png"
                       alt="Canlé"
@@ -800,7 +724,11 @@
                 </div>
                 <div class="vs-widget-about">
                   <p class="footer-text">
-                    Canlé is a global student initiative that fosters connection, collaboration, and leadership through immersive experiences like Model UNs, diplomatic events, and cultural exchanges. We empower students to step beyond classrooms and grow into confident, compassionate changemakers.
+                    Canlé is a global student initiative that fosters
+                    connection, collaboration, and leadership through immersive
+                    experiences like Model UNs, diplomatic events, and cultural
+                    exchanges. We empower students to step beyond classrooms and
+                    grow into confident, compassionate changemakers.
                   </p>
                   <div class="footer-social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -820,7 +748,7 @@
             <div class="col-md-6 col-lg-2 col-xl-auto">
               <div class="widget widget_nav_menu footer-widget">
                 <h3 class="widget_title">
-                  Quick Link<img src="../assets/img/shapes/d-1-1.svg" />
+                  Quick Link<img src="assets/img/shapes/d-1-1.svg" />
                 </h3>
                 <div class="menu-all-pages-container">
                   <ul class="menu">
@@ -834,26 +762,26 @@
                       <a href="/team/">Team<span></span></a>
                     </li>
                     <li>
-                      <a href="/gallery/">Gallery<span></span></a>
+                      <a href="gallery/">Gallery<span></span></a>
                     </li>
                     <li>
                       <a href="/team/">Our Team <span></span></a>
                     </li>
                     <li>
-                      <a href="/contact/">Contact<span></span></a>
+                      <a href="contact/">Contact<span></span></a>
                     </li>
                     <li>
-                      <a href="/faq/">FAQ<span></span></a>
+                      <a href="faq/">FAQ<span></span></a>
                     </li>
                   </ul>
                 </div>
               </div>
             </div>
-            
+
             <div class="col-md-6 col-xl-3">
               <div class="widget footer-widget">
                 <h3 class="widget_title">
-                  Contact Us<img src="../assets/img/shapes/d-1-1.svg" />
+                  Contact Us<img src="assets/img/shapes/d-1-1.svg" />
                 </h3>
                 <div class="footer-info style2">
                   <div class="footer-info_icon">
@@ -933,10 +861,10 @@
               <nav class="footer-menu">
                 <ul>
                   <li class="menu-item">
-                    <a href="/faq/">Terms &amp; Condition</a>
+                    <a href="faq/">Terms &amp; Condition</a>
                   </li>
                   <li class="menu-item">
-                    <a href="/faq/">Privacy</a>
+                    <a href="faq/">Privacy</a>
                   </li>
                 </ul>
               </nav>
@@ -971,5 +899,5 @@
     <script src="../assets/js/main.js"></script>
   </body>
 
-
+  <!-- Mirrored from html.Canlésoft.com/Canlé/demo/register.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Jul 2025 11:46:54 GMT -->
 </html>
