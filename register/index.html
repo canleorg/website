@@ -95,6 +95,7 @@
       href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap"
       rel="stylesheet"
     />
+   
     <!--==============================
 	    All CSS File
 	============================== -->
@@ -114,6 +115,7 @@
     />
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="../assets/css/style.css" />
+    
   </head>
 
   <body>
@@ -133,7 +135,10 @@
     <div class="preloader">
       <button class="vs-btn preloaderCls">Cancel Preloader</button>
       <div class="preloader-inner">
-        <img src="../assets/img/logo.svg" alt="logo" />
+        <img
+          src="https://res.cloudinary.com/dpc6a18ml/image/upload/v1753266057/canle_logo4_i73tle.png"
+          alt="logo"
+        />
         <span class="loader"></span>
       </div>
     </div>
@@ -243,13 +248,14 @@
         <div class="widget">
           <div class="vs-widget-about">
             <div class="footer-logo">
-              <a href="/"
-                ><img src="../assets/img/logo.svg" alt="Canlé"
-              /></a>
+              <a href="/"><img src="../assets/img/logo.svg" alt="Canlé" /></a>
             </div>
             <p>
-              Canlé is a global student initiative that fosters connection, collaboration, and leadership through immersive experiences like Model UNs, diplomatic events, and cultural exchanges. We empower students to step beyond classrooms and grow into confident, compassionate changemakers.
-               
+              Canlé is a global student initiative that fosters connection,
+              collaboration, and leadership through immersive experiences like
+              Model UNs, diplomatic events, and cultural exchanges. We empower
+              students to step beyond classrooms and grow into confident,
+              compassionate changemakers.
             </p>
             <div class="footer-social">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -384,7 +390,7 @@
                   <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
                 <div class="header-links d-none d-md-flex">
-                   <a href="/contact/"><i class="fas fa-user"></i>Contact</a>
+                  <a href="/contact/"><i class="fas fa-user"></i>Contact</a>
                 </div>
               </div>
             </div>
@@ -534,11 +540,27 @@
 
     <!-- Service Area -->
     <!-- Login Area -->
+      <style>
+.ff-form .ff-form-check-label {
+    padding-left: 30px !important;
+}
+.ff-powered-img {
+  display: none !important;
+}
+
+    </style>
     <section class="space-top space-extra-bottom">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 mx-auto">
-            <form
+            <div class="container" id="ff-compose"></div>
+            <script
+              async
+              defer
+              src="https://formfacade.com/include/105796138026288632307/form/1FAIpQLSf5n2N-4dsx8VD8VpanJUfBRdjeoamFUDNlVq8Si3_iZLzoJw/bootstrap.js?div=ff-compose"
+            ></script>
+
+            <!-- <form
               class="form-style4 ajax-contact mb-50"
               action="mail.php"
               method="post"
@@ -638,7 +660,7 @@
                 </div>
               </div>
               </div>
-            </form>
+            </form> -->
           </div>
         </div>
       </div>
