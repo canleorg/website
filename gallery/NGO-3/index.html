@@ -829,3 +829,15 @@
   </body>
 
 </html>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const elem = document.querySelector("#gallery");
+    imagesLoaded(elem, function () {
+      new Masonry(elem, {
+        itemSelector: ".col-md-3",
+        percentPosition: true,
+      });
+    });
+  });
+</script>
