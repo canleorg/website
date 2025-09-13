@@ -404,11 +404,9 @@
     <!-- Team -->
     <div class="space space-extra-bottom">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-7">
-            <h3 class="sec-title">View Our Gallery</h3>
-          </div>
-          <div class="col-md-6">
+        <div class="row" id="gallery">
+         
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://lh3.googleusercontent.com/d/1ejA6ynF4FXa-lu_cIwSEStQ71_MlL-1T"
@@ -426,7 +424,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://res.cloudinary.com/dpc6a18ml/video/upload/v1757770089/Snapchat-799039525_axdqtv.mp4"
@@ -450,7 +448,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://res.cloudinary.com/dpc6a18ml/video/upload/v1757770091/Snapchat-1935240335_wd97qk.mp4"
@@ -474,7 +472,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div
               class="gallery-style1"
               style="
@@ -511,7 +509,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div
               class="gallery-style1"
               style="
@@ -761,3 +759,11 @@
   </body>
 
 </html>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script>
+  const elem = document.querySelector("#gallery");
+  new Masonry(elem, {
+    itemSelector: ".col-md-3",
+    percentPosition: true,
+  });
+</script>

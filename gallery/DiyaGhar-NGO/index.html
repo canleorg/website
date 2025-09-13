@@ -404,11 +404,8 @@
     <!-- Team -->
     <div class="space space-extra-bottom">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-7">
-            <h3 class="sec-title">View Our Gallery</h3>
-          </div>
-          <div class="col-md-6">
+        <div class="row" id="gallery">
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://lh3.googleusercontent.com/d/1D-Ld_JBBuIAmO5vwV65uYOWG02aX9SF3"
@@ -426,7 +423,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://lh3.googleusercontent.com/d/1oKDPoSIPdowNB-zwkulVdQ3Dlf7XfZda"
@@ -444,7 +441,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://lh3.googleusercontent.com/d/1g-wY509VsjJNNhgrWVVf1Xjs-OoUX3Bg"
@@ -462,7 +459,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://lh3.googleusercontent.com/d/1s6n5hYlr4Pp78_LfiWAhGMX61URsu6nj"
@@ -480,7 +477,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://lh3.googleusercontent.com/d/1g4CYxL1HKQRTos8FqxgXM5rpTZa4eXCz"
@@ -498,7 +495,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://lh3.googleusercontent.com/d/1g69-FIVyxMnGxBDIdtfbZSrP8ohJ8wcr"
@@ -516,7 +513,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://lh3.googleusercontent.com/d/1fkmzkoDw9a-a5oXAn_28tpXtjB7NjcsC"
@@ -534,7 +531,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://lh3.googleusercontent.com/d/1sGZo4h1reyc3vIWIvoY7fmkC6s-5T-Ib"
@@ -552,7 +549,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://lh3.googleusercontent.com/d/1FL5ofjKdPLmOZqzfIsytqXhadVRb5F7q"
@@ -570,7 +567,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://lh3.googleusercontent.com/d/11y_pNmJd3AZ5TCjmgdMMIrSnDZ0ikWNl"
@@ -588,7 +585,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://lh3.googleusercontent.com/d/1g9oS-TNq43AbRy4aC29wdivh5aHfU9kh"
@@ -606,7 +603,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://lh3.googleusercontent.com/d/1-rL7dZyDxuYqofAwO4PCMt_1m5d5HdDV"
@@ -624,7 +621,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://lh3.googleusercontent.com/d/1x8ghbB99jY33TCGQ9RqJM16mfIXX-arI"
@@ -642,7 +639,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class=" col-md-3">
             <div class="gallery-style1">
               <a
                 href="https://lh3.googleusercontent.com/d/1sOO7hyAGhtEw6e0TRYhjYz09znMgxSZs"
@@ -872,5 +869,12 @@
     <!-- Main Js File -->
     <script src="/assets/js/main.js"></script>
   </body>
-
 </html>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script>
+  const elem = document.querySelector("#gallery");
+  new Masonry(elem, {
+    itemSelector: ".col-md-3",
+    percentPosition: true,
+  });
+</script>
