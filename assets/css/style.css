@@ -1,81 +1,4 @@
-/*
-Template Name: Canlé
-Template URL: https://html.Canlé.com/Canlé
-Description: Canlé 
-Author:Canlé
-Author URI: #
-Version: 1.0.0
-*/
-/*=================================
-    CSS Index Here
-==================================*/
-/*
 
-01. Theme Base
-    1.1. Mixin
-    1.2. Function
-    1.3. Variable
-    1.4. Typography
-    1.5. Extend
-    1.7. Wordpress Default
-02. Reset
-    2.1. Container
-    2.2. Grid
-    2.3. Input
-    2.4. Slick Slider
-    2.5. Mobile Menu
-03. Utilities
-    3.1. Preloader
-    3.2. Buttons
-    3.3. Titles
-    3.4. Common
-    3.6. Font
-    3.7. Background
-    3.8. Text Color
-    3.9. Overlay
-    3.10. Animation
-04. Template Style
-    4.1. Widget
-    4.2. Header
-    4.3. Footer
-    4.4. Breadcumb
-    4.5. Pagination
-    4.6. Blog
-    4.7. Comments
-    4.8. Hero Area
-    4.9. Error    
-    4.10. Feature
-    4.11. About
-    4.12. Service
-    4.13. Counter
-    4.14. Team
-    4.15. Process
-    4.16. Accordion
-    4.17. Simple Sections
-    4.18. Testimonial
-    4.19. Popup Side Menu
-    4.20. Price Plan
-    4.21. Forms Style
-    4.22. Projects
-    4.23. Contact
-    4.24. Event
-    4.25. CTA
-    4.26. Video
-    4.27. Gallery
-    4.28. Newsletter
-05. Spacing
-06. Color Plate
-
-*/
-/*=================================
-    CSS Index End
-==================================*/
-/*=================================
-   01. Theme Base
-==================================*/
-/*------------------- 1.1. Mixin -------------------*/
-/*------------------- 1.2. Function -------------------*/
-/*------------------- 1.3. Variable-------------------*/
 :root {
   --theme-color: #7409f6;
   --sec-color: #000000;
@@ -1609,7 +1532,7 @@ textarea.is-invalid {
   top: 0;
   bottom: 0;
   z-index: 999;
-  background-color: var(--white-color);
+  background-color: #050505;
 }
 .preloader .vs-btn {
   padding: 15px 20px;
