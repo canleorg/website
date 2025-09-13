@@ -7,8 +7,8 @@
   --smoke-color: #f6f6f6;
   --secondary-color: #eef2fb;
   --border-color: #ececec;
-  --black-color: #000000;
-  --white-color: #ffffff;
+  --black-color: #030203;
+  --white-color: #FCFBFC;
   --yellow-color: #fec624;
   --success-color: #28a745;
   --error-color: #dc3545;
@@ -28,6 +28,7 @@
 html,
 body {
   scroll-behavior: auto !important;
+  background-color: #FCFBFC !important;
 }
 
 body {
