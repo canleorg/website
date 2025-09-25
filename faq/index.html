@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>
-      Canlé - Event Management & Conference
-    </title>
+    <title>Canlé - Event Management & Conference</title>
     <meta name="author" content="Dasari Prem Chand" />
     <meta name="description" content="Canlé " />
     <meta name="keywords" content="Canlé " />
@@ -114,6 +112,55 @@
     />
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+      .faq-item {
+        margin-bottom: 10px;
+        border: 1px solid var(--theme-color);
+        border-radius: 6px;
+        overflow: hidden;
+      }
+
+      .faq-question {
+        background: var(--theme-color);
+        color: #fff;
+        font-weight: bold;
+        padding: 15px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: none;
+        width: 100%;
+        text-align: left;
+      }
+
+      .faq-question:focus {
+        outline: none;
+        box-shadow: none;
+      }
+
+      .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        background: #f9f9f9;
+        color: #333;
+        padding: 0 15px; /* only side padding initially */
+        transition: max-height 0.4s ease, padding 0.3s ease;
+      }
+
+      .faq-item.active .faq-answer {
+        max-height: 500px; /* enough space for content */
+        padding: 15px;
+      }
+
+      .faq-arrow {
+        transition: transform 0.3s ease;
+      }
+
+      .faq-item.active .faq-arrow {
+        transform: rotate(180deg);
+      }
+    </style>
   </head>
 
   <body>
@@ -147,7 +194,10 @@
       <div class="vs-menu-area text-center">
         <div class="mobile-logo">
           <a href="/"
-            ><img src="../ https://res.cloudinary.com/dpc6a18ml/image/upload/v1757698977/Canle%CC%81_bgr_yatlub.png" alt="Carmax" class="logo"
+            ><img
+              src="../ https://res.cloudinary.com/dpc6a18ml/image/upload/v1757698977/Canle%CC%81_bgr_yatlub.png"
+              alt="Carmax"
+              class="logo"
           /></a>
           <button class="vs-menu-toggle"><i class="fal fa-times"></i></button>
         </div>
@@ -202,8 +252,11 @@
               /></a>
             </div>
             <p>
-              Canlé is a global student initiative that fosters connection, collaboration, and leadership through immersive experiences like Model UNs, diplomatic events, and cultural exchanges. We empower students to step beyond classrooms and grow into confident, compassionate changemakers.
-               
+              Canlé is a global student initiative that fosters connection,
+              collaboration, and leadership through immersive experiences like
+              Model UNs, diplomatic events, and cultural exchanges. We empower
+              students to step beyond classrooms and grow into confident,
+              compassionate changemakers.
             </p>
             <div class="footer-social">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -220,7 +273,6 @@
             </div>
           </div>
         </div>
-       
       </div>
     </div>
     <header class="vs-header">
@@ -248,7 +300,9 @@
                 <div class="header-social">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
                   <a href="#"><i class="fas fa-envelope"></i></a>
-                  <a href="https://www.instagram.com/canle.official/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.instagram.com/canle.official/"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
                   <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
                 <div class="header-links d-none d-md-flex">
@@ -262,7 +316,10 @@
       <div class="header-bottom">
         <div class="container">
           <!-- Main Menu Area -->
-          <div class="sticky-wrapper vs-navbar style3" style="outline: 2px solid var(--theme-color);">
+          <div
+            class="sticky-wrapper vs-navbar style3"
+            style="outline: 2px solid var(--theme-color)"
+          >
             <div class="sticky-active">
               <div class="row align-items-center">
                 <div class="col-auto">
@@ -360,7 +417,7 @@
         </div>
       </div>
     </header>
- 
+
     <!-- Team -->
     <div class="space space-extra-bottom">
       <div class="container">
@@ -372,205 +429,217 @@
         </div>
         <div class="row gy-4 mt-3">
           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  1. What is Canlé and what kind of events do you organize?
-                </h5>
-                <p class="card-text">
-                  Canlé is a youth-led platform focused on soft skills, global
-                  exposure, and community building. We organize events such as
-                  Model United Nations (MUNs), diplomatic simulations, cultural
-                  exchanges, career-oriented workshops, and networking mixers.
-                </p>
+            <div class="faq-item">
+              <button class="faq-question">
+                1. What is Canlé and what kind of events do you organize?
+                <span class="faq-arrow">⌄</span>
+              </button>
+              <div class="faq-answer">
+                Canlé is a youth-led platform focused on soft skills, global
+                exposure, and community building. We organize events such as
+                Model United Nations (MUNs), diplomatic simulations, cultural
+                exchanges, career-oriented workshops, and networking mixers.
               </div>
             </div>
           </div>
+
           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  2. What’s the purpose of your MUN or diplomatic events?
-                </h5>
-                <p class="card-text">
-                  Our events aim to foster public speaking, negotiation,
-                  leadership, and global awareness by simulating real-world
-                  diplomatic scenarios. They also serve as safe spaces for youth
-                  to collaborate, ideate, and grow.
-                </p>
+            <div class="faq-item">
+              <button class="faq-question">
+                2. What’s the purpose of your MUN or diplomatic events?
+                <span class="faq-arrow">⌄</span>
+              </button>
+              <div class="faq-answer">
+                Our events aim to foster public speaking, negotiation,
+                leadership, and global awareness by simulating real-world
+                diplomatic scenarios. They also serve as safe spaces for youth
+                to collaborate, ideate, and grow.
               </div>
             </div>
           </div>
+
           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  3. Do I need any prior experience to attend a Canlé event?
-                </h5>
-                <p class="card-text">
-                  Not at all! Most of our events are beginner-friendly. Whether
-                  it’s your first MUN or your tenth, we offer support like
-                  training guides, webinars, and mentorship.
-                </p>
+            <div class="faq-item">
+              <button class="faq-question">
+                3. Do I need any prior experience to attend a Canlé event?
+                <span class="faq-arrow">⌄</span>
+              </button>
+              <div class="faq-answer">
+                Not at all! Most of our events are beginner-friendly. Whether
+                it’s your first MUN or your tenth, we offer support like
+                training guides, webinars, and mentorship.
               </div>
             </div>
           </div>
           <br />
           <span class="sec-subtitle mt-5"> MUN / DIPLOMATIC EVENTS</span>
           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  4. How do I register for the MUN or diplomatic event?
-                </h5>
-                <p class="card-text">
-                  You can register through the official Google Form or website
-                  link shared on our social media. Early registration is
-                  recommended as slots are limited.
-                </p>
+            <div class="faq-item">
+              <button class="faq-question">
+                4. How do I register for the MUN or diplomatic event?
+                <span class="faq-arrow">⌄</span>
+              </button>
+              <div class="faq-answer">
+                You can register through the official Google Form or website
+                link shared on our social media. Early registration is
+                recommended as slots are limited.
               </div>
             </div>
           </div>
+
+          <!-- Question 5 -->
           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  5. What are the committees and agendas?
-                </h5>
-                <p class="card-text">
-                  Committees and agendas are announced prior to the event and
-                  are carefully curated around current global issues. Keep an
-                  eye on our social media and website for updates.
-                </p>
+            <div class="faq-item">
+              <button class="faq-question">
+                5. What are the committees and agendas?
+                <span class="faq-arrow">⌄</span>
+              </button>
+              <div class="faq-answer">
+                Committees and agendas are announced prior to the event and are
+                carefully curated around current global issues. Keep an eye on
+                our social media and website for updates.
               </div>
             </div>
           </div>
+
+          <!-- Question 6 -->
           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  6. Will I get a certificate for participation?
-                </h5>
-                <p class="card-text">
-                  Yes, all active participants receive certificates.
-                  High-performing delegates may also be awarded Certificates of
-                  Excellence and other recognitions.
-                </p>
+            <div class="faq-item">
+              <button class="faq-question">
+                6. Will I get a certificate for participation?
+                <span class="faq-arrow">⌄</span>
+              </button>
+              <div class="faq-answer">
+                Yes, all active participants receive certificates.
+                High-performing delegates may also be awarded Certificates of
+                Excellence and other recognitions.
               </div>
             </div>
           </div>
+
+          <!-- Question 7 -->
           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">7. What is the dress code?</h5>
-                <p class="card-text">
-                  Formal Western attire is usually expected. Some events may
-                  have themed dress days (e.g., traditional wear reflecting
-                  country colors)—details will be shared in advance.
-                </p>
+            <div class="faq-item">
+              <button class="faq-question">
+                7. What is the dress code?
+                <span class="faq-arrow">⌄</span>
+              </button>
+              <div class="faq-answer">
+                Formal Western attire is usually expected. Some events may have
+                themed dress days (e.g., traditional wear reflecting country
+                colors)—details will be shared in advance.
               </div>
             </div>
           </div>
+
+          <!-- Question 8 -->
           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  8. Can I choose my country or committee?
-                </h5>
-                <p class="card-text">
-                  Yes, there is typically a preference form where you can select
-                  your top committee/country choices. Allotments are made on a
-                  first-come-first-serve basis and delegate strength per
-                  committee.
-                </p>
+            <div class="faq-item">
+              <button class="faq-question">
+                8. Can I choose my country or committee?
+                <span class="faq-arrow">⌄</span>
+              </button>
+              <div class="faq-answer">
+                Yes, there is typically a preference form where you can select
+                your top committee/country choices. Allotments are made on a
+                first-come-first-serve basis and delegate strength per
+                committee.
               </div>
             </div>
           </div>
           <br />
           <span class="sec-subtitle mt-5">NETWORKING EVENTS</span>
           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  9. What happens at a Canlé networking event?
-                </h5>
-                <p class="card-text">
-                  Our networking mixers are thoughtfully curated spaces to build
-                  connections, share ideas, and explore potential
-                  collaborations. Activities may include speed networking,
-                  theme-based discussion circles, and interactive games.
-                </p>
+            <div class="faq-item">
+              <button class="faq-question">
+                9. What happens at a Canlé networking event?
+                <span class="faq-arrow">⌄</span>
+              </button>
+              <div class="faq-answer">
+                Our networking mixers are thoughtfully curated spaces to build
+                connections, share ideas, and explore potential collaborations.
+                Activities may include speed networking, theme-based discussion
+                circles, and interactive games.
               </div>
             </div>
           </div>
+
           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  10. Do I need to prepare anything in advance?
-                </h5>
-                <p class="card-text">
-                  Not necessarily, but it's always a good idea to bring a
-                  curious mind, a few questions, and if applicable, your
-                  LinkedIn/resume if it’s a career-oriented session.
-                </p>
+            <div class="faq-item">
+              <button class="faq-question">
+                10. Do I need to prepare anything in advance?
+                <span class="faq-arrow">⌄</span>
+              </button>
+              <div class="faq-answer">
+                Not necessarily, but it's always a good idea to bring a curious
+                mind, a few questions, and if applicable, your LinkedIn/resume
+                if it’s a career-oriented session.
               </div>
             </div>
           </div>
-           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                 11. Are these events limited to students from specific institutions?
-                </h5>
-                <p class="card-text">
-                  No. Our events are open to university youth from all disciplines and locations unless specified otherwise.
-                </p>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="faq-item">
+              <button class="faq-question">
+                11. Are these events limited to students from specific
+                institutions?
+                <span class="faq-arrow">⌄</span>
+              </button>
+              <div class="faq-answer">
+                No. Our events are open to university youth from all disciplines
+                and locations unless specified otherwise.
               </div>
             </div>
           </div>
+
           <br />
           <span class="sec-subtitle mt-5">SUPPORT</span>
-           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-               12. Is accommodation provided for outstation participants?
-                </h5>
-                <p class="card-text">
-                  Depending on the event scale and partnerships, we may offer accommodation support or help connect you to nearby options. Check the specific event brochure for details.
-                </p>
+          <div class="col-md-6 col-lg-4">
+            <div class="faq-item">
+              <button class="faq-question">
+                12. Is accommodation provided for outstation participants?
+                <span class="faq-arrow">⌄</span>
+              </button>
+              <div class="faq-answer">
+                Depending on the event scale and partnerships, we may offer
+                accommodation support or help connect you to nearby options.
+                Check the specific event brochure for details.
               </div>
             </div>
           </div>
-           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  13. Is food provided during the event?
-                </h5>
-                <p class="card-text">
-                Yes, our major events typically include lunch and high-tea. This will be mentioned clearly in the event schedule or delegate kit.
-                </p>
+
+          <!-- Question 13 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="faq-item">
+              <button class="faq-question">
+                13. Is food provided during the event?
+                <span class="faq-arrow">⌄</span>
+              </button>
+              <div class="faq-answer">
+                Yes, our major events typically include lunch and high-tea. This
+                will be mentioned clearly in the event schedule or delegate kit.
               </div>
             </div>
           </div>
-           <div class="col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">
-                  14. Who do I contact in case of questions?
-                </h5>
-                <p class="card-text">
-                  You can reach out to us at canle.org@gmail.com or contact@thecanle.com DM us on Instagram canle.official.
-                </p>
+
+          <!-- Question 14 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="faq-item">
+              <button class="faq-question">
+                14. Who do I contact in case of questions?
+                <span class="faq-arrow">⌄</span>
+              </button>
+              <div class="faq-answer">
+                You can reach out to us at <b>canle.org@gmail.com</b> or
+                <b>contact@thecanle.com</b>. You can also DM us on Instagram
+                <b>@canle.official</b>.
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  <!-- Footer Area -->
+    <!-- Footer Area -->
     <footer class="footer-layout2 shape-mockup-wrap">
       <div
         class="shape-mockup d-none d-xl-block z-index-negative"
@@ -592,7 +661,7 @@
             <div class="col-md-6 col-lg-4 col-xl-auto">
               <div class="widget footer-widget">
                 <h3 class="widget_title">
-                  About  Canlé<img src="../assets/img/shapes/d-1-1.svg" />
+                  About Canlé<img src="../assets/img/shapes/d-1-1.svg" />
                 </h3>
                 <div class="footer-logo">
                   <a href="/"
@@ -604,7 +673,11 @@
                 </div>
                 <div class="vs-widget-about">
                   <p class="footer-text">
-                    Canlé is a global student initiative that fosters connection, collaboration, and leadership through immersive experiences like Model UNs, diplomatic events, and cultural exchanges. We empower students to step beyond classrooms and grow into confident, compassionate changemakers.
+                    Canlé is a global student initiative that fosters
+                    connection, collaboration, and leadership through immersive
+                    experiences like Model UNs, diplomatic events, and cultural
+                    exchanges. We empower students to step beyond classrooms and
+                    grow into confident, compassionate changemakers.
                   </p>
                   <div class="footer-social">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -653,7 +726,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="col-md-6 col-xl-3">
               <div class="widget footer-widget">
                 <h3 class="widget_title">
@@ -774,6 +847,12 @@
     <!-- Main Js File -->
     <script src="../assets/js/main.js"></script>
   </body>
-
-
 </html>
+<script>
+  document.querySelectorAll(".faq-question").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const item = btn.parentElement;
+      item.classList.toggle("active");
+    });
+  });
+</script>
