@@ -3,9 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>
-      Canlé - Event Management & Conference
-    </title>
+    <title>Canlé - Event Management & Conference</title>
     <meta name="author" content="Dasari Prem Chand" />
     <meta name="description" content="Canlé " />
     <meta name="keywords" content="Canlé " />
@@ -253,7 +251,9 @@
                 <div class="header-social">
                   <a href="#"><i class="fab fa-facebook-f"></i></a>
                   <a href="#"><i class="fas fa-envelope"></i></a>
-                  <a href="https://www.instagram.com/canle.official/"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.instagram.com/canle.official/"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
                   <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
                 <div class="header-links d-none d-md-flex">
@@ -267,7 +267,10 @@
       <div class="header-bottom">
         <div class="container">
           <!-- Main Menu Area -->
-          <div class="sticky-wrapper vs-navbar style3" style="outline: 2px solid var(--theme-color);">
+          <div
+            class="sticky-wrapper vs-navbar style3"
+            style="outline: 2px solid var(--theme-color)"
+          >
             <div class="sticky-active">
               <div class="row align-items-center">
                 <div class="col-auto">
@@ -420,8 +423,9 @@
               <h3 class="contact-box__title h4">Leave a Message</h3>
               <p class="contact-box__text">We’re Ready To Help You</p>
               <form
-                class="contact-box__form ajax-contact"
-                action="#"
+                class="contact-box__form"
+
+                id="myForm"
                 method="POST"
               >
                 <div class="row gx-20">
@@ -686,3 +690,29 @@
     <script src="../assets/js/main.js"></script>
   </body>
 </html>
+<script>
+  const form = document.getElementById("myForm");
+  form.addEventListener("submit", function (e) {
+    console.log("submitted");
+    e.preventDefault();
+    const formData = new FormData(form);
+    const data = {};
+    formData.forEach((value, key) => (data[key] = value));
+    console.log(data);
+    fetch("https://script.google.com/macros/s/AKfycbyadr2_LMX1ex995Gyr-iN-ALXCS-AoIknbOOI9VCeWSSxC-9OAj83I9v5XjyQcwvg1jQ/exec", {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    })
+      .then((response) => response.text())
+      .then((text) => {
+        document.getElementById("response").innerText = "Response: " + text;
+        form.reset();
+      })
+      .catch((err) => {
+        document.getElementById("response").innerText = "Error: " + err;
+      });
+  });
+</script>
