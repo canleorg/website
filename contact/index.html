@@ -422,11 +422,9 @@
             <div class="contact-box">
               <h3 class="contact-box__title h4">Leave a Message</h3>
               <p class="contact-box__text">We’re Ready To Help You</p>
-              <form
-                class="contact-box__form"
-
-                id="myForm"
-                method="POST"
+              <form class="contact-box__form" id="myForm" method="POST"
+              action="https://script.google.com/macros/s/AKfycbyx-Obvp1VSeyvjr6iexYUwX1qnBayoq67n2MvSQlqRiWabQ36DVDXl-1MN9LOoXArz/exec"
+              target="_blank"
               >
                 <div class="row gx-20">
                   <div class="col-md-6 form-group">
@@ -690,7 +688,7 @@
     <script src="../assets/js/main.js"></script>
   </body>
 </html>
-<script>
+<!-- <script>
   const form = document.getElementById("myForm");
   form.addEventListener("submit", function (e) {
     console.log("submitted");
@@ -699,13 +697,17 @@
     const data = {};
     formData.forEach((value, key) => (data[key] = value));
     console.log(data);
-    fetch("https://script.google.com/macros/s/AKfycbyadr2_LMX1ex995Gyr-iN-ALXCS-AoIknbOOI9VCeWSSxC-9OAj83I9v5XjyQcwvg1jQ/exec", {
-      method: "POST",
-      body: JSON.stringify(data),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
+    fetch(
+      "https://script.googleapis.com/v1/scripts/AKfycby7NaTxJg7oZHVY_GRbm63CV7vBThSVBkGUW-l9JxVckIh5bFViDgllDWZItLe6Zjkqpw:run",
+      {
+        method: "POST",
+
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    )
       .then((response) => response.text())
       .then((text) => {
         document.getElementById("response").innerText = "Response: " + text;
@@ -715,4 +717,4 @@
         document.getElementById("response").innerText = "Error: " + err;
       });
   });
-</script>
+</script> -->
