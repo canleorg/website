@@ -115,7 +115,13 @@
     />
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="../assets/css/style.css" />
-    
+    <style>
+.ff-powered-img {
+  display: none !important;
+}
+
+
+    </style>
   </head>
 
   <body>
@@ -789,3 +795,16 @@
   </body>
 
 </html>
+<script>
+
+function hideFormfacadeBranding() {
+  document.querySelectorAll('.ff-powered-img, .ff-watermark').forEach(el => el.style.display = 'none');
+}
+
+hideFormfacadeBranding();
+
+const observer = new MutationObserver(hideFormfacadeBranding);
+observer.observe(document.body, { childList: true, subtree: true });
+
+
+</script>
