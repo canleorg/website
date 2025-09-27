@@ -2018,6 +2018,16 @@ textarea.is-invalid {
   font-weight: 700;
   margin: -0.25em 0 20px 0;
 }
+.sec-subtitle-pro{
+  text-transform: capitalize;
+  display: block;
+  color: #000000;
+  font-family: var(--title-font);
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  margin: -0.25em 0 20px 0;
+}
 .sec-subtitle::before,
 .sec-subtitle2::before,
 .sec-subtitle3::before,
