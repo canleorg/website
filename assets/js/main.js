@@ -1,34 +1,5 @@
 (function ($) {
   "use strict";
-  /*=================================
-      JS Index Here
-  ==================================*/
-  /*
-    01. On Load Function
-    02. Preloader
-    03. Mobile Menu Active
-    04. Sticky fix
-    05. Scroll To Top
-    06. Set Background Image
-    07. Hero Slider Active 
-    08. Global Slider
-    09. Ajax Contact Form
-    10. Popup Side Menu   
-    11. Magnific Popup
-    12. Section Position
-    13. Filter
-    14. One Page Nav
-    15. WOW.js Animation
-    16. Color Plate Js
-    17. Animate Counter Js
-    18. Shape Mockup 
-    19. Custom Tab
-    20. Countdown Js
-  */
-  /*=================================
-      JS Index End
-  ==================================*/
-  /*
 
   /*---------- 01. On Load Function ----------*/
   $(window).on("load", function () {
