@@ -8517,7 +8517,7 @@ blockquote.vs-quote .quote-author {
 }
 .team-style1 .team-name {
   margin-bottom: 4px;
-  font-size: 24px;
+
 }
 .team-style1 .team-content {
   padding-bottom: 23px;
@@ -8639,6 +8639,7 @@ blockquote.vs-quote .quote-author {
 }
 .team-style1:hover {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  outline: 2px solid var(--theme-color);
   background-color: var(--smoke-color);
 }
 .team-style1:hover .team-content {
@@ -11217,12 +11218,7 @@ blockquote.vs-quote .quote-author {
   color: var(--white-color);
   text-align: center;
 }
-.order-summmary tr:last-child,
-.order-summmary tr:last-child td {
-  background-color: var(--theme-color);
-  border-color: var(--theme-color);
-  color: var(--white-color);
-}
+
 
 /*------------------- 4.25. CTA  -------------------*/
 @media (min-width: 1500px) {
