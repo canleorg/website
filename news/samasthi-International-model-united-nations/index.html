@@ -570,32 +570,48 @@
                 class="row justify-content-center justify-content-xl-between"
               >
                 <div class="col-auto">
-                  <div class="timeline-item" style="cursor: pointer;" onclick="window.location.href='#committeeTabs'">
+                  <div
+                    class="timeline-item"
+                    style="cursor: pointer"
+                    onclick="window.location.href='#committeeTabs'"
+                  >
                     <i class="fas fa-microphone"></i>
                     <span>Committees <br />& Agenda </span>
                   </div>
                 </div>
                 <div class="col-auto">
-                  <div class="timeline-item" style="cursor: pointer;" onclick="window.location.href='#timelineid'">
+                  <div
+                    class="timeline-item"
+                    style="cursor: pointer"
+                    onclick="window.location.href='#timelineid'"
+                  >
                     <i class="fas fa-calendar"></i>
-                    <span>Schedule<br>&nbsp;</span>
+                    <span>Schedule<br />&nbsp;</span>
                   </div>
                 </div>
                 <div class="col-auto">
                   <div class="timeline-item">
                     <i class="fas fa-images"></i>
-                    <span>Brochure<br>&nbsp;</span>
+                    <span>Brochure<br />&nbsp;</span>
                   </div>
                 </div>
               </div>
             </div>
             <div class="container mt-5">
               <div class="col-md-10 offset-md-1" id="timelineid">
-                <h3 class="text-center mb-4" style="text-decoration: underline;text-decoration-color: var(--theme-color);">3 DAY CONFERENCE EVENT FLOW</h3>
+                <h3
+                  class="text-center mb-4"
+                  style="
+                    text-decoration: underline;
+                    text-decoration-color: var(--theme-color);
+                  "
+                >
+                  3 DAY CONFERENCE EVENT FLOW
+                </h3>
 
                 <!-- Day 1 -->
                 <h2 class="day-heading">Day 1</h2>
-                <ul class="timeline" >
+                <ul class="timeline">
                   <li>
                     <span class="time">9:00 – 11:30 am</span>
                     <p>Registrations</p>
@@ -657,8 +673,16 @@
                 </ul>
               </div>
             </div>
-            <div class="container my-5">
-              <h3 class="mb-4 text-center" style="text-decoration: underline;text-decoration-color: var(--theme-color);">COMMITTEES AND AGENDAS</h3>
+            <div class="container my-5 px-3 px-md-5">
+              <h3
+                class="mb-4 text-center"
+                style="
+                  text-decoration: underline;
+                  text-decoration-color: var(--theme-color);
+                "
+              >
+                COMMITTEES AND AGENDAS
+              </h3>
 
               <!-- Tabs -->
               <ul
@@ -668,7 +692,7 @@
               >
                 <li class="nav-item">
                   <button
-                    class="nav-link active "
+                    class="nav-link active"
                     id="offline-tab"
                     data-bs-toggle="tab"
                     data-bs-target="#offline"
@@ -693,7 +717,7 @@
               </ul>
 
               <div
-                class="tab-content  rounded-bottom shadow-sm "
+                class="tab-content rounded-bottom shadow-sm"
                 id="committeeTabsContent"
               >
                 <!-- OFFLINE -->
@@ -702,8 +726,10 @@
                   id="offline"
                   role="tabpanel"
                 >
-                  <div class="order-summmary ebooking-wrap2">
-                    <table>
+                  <div class="order-summmary ebooking-wrap2 table-responsive">
+                    <table
+                      class="table table-bordered align-middle w-100 full-table"
+                    >
                       <tbody>
                         <tr>
                           <th>Committee</th>
@@ -770,8 +796,10 @@
 
                 <!-- ONLINE -->
                 <div class="tab-pane fade" id="online" role="tabpanel">
-                  <div class="order-summmary ebooking-wrap2">
-                    <table>
+                  <div class="order-summmary ebooking-wrap2 table-responsive">
+                    <table
+                      class="table table-bordered align-middle w-100 full-table"
+                    >
                       <tbody>
                         <tr>
                           <th>Committee</th>
@@ -800,42 +828,10 @@
                       </tbody>
                     </table>
                   </div>
-                  <!-- <div class="table-responsive">
-                    <table
-                      class="table table-bordered table-striped align-middle"
-                    >
-                      <thead>
-                        <tr>
-                          <th>Committee</th>
-                          <th>Capacity (Pax)</th>
-                          <th>Agenda</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>WTO</td>
-                          <td>120</td>
-                          <td>
-                            Facilitating trade for Least Developed Countries
-                            (LDCs): simplifying market access, tariff
-                            reductions, and capacity-building for smaller
-                            economies.
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>European Parliament</td>
-                          <td>120</td>
-                          <td>
-                            Renewable energy targets & accelerating the energy
-                            transition — scaling up solar, wind, green hydrogen.
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div> -->
                 </div>
               </div>
             </div>
+
             <style>
               .nav-tabs .nav-link {
                 border: 1px solid var(--theme-color);
@@ -868,10 +864,23 @@
                 background: var(--theme-color);
                 color: #fff;
                 transition: background 0.3s ease;
+                white-space: nowrap;
               }
               table tr:hover {
                 background: rgba(34, 192, 232, 0.08);
                 transition: background 0.3s ease;
+              }
+              .table-responsive {
+                overflow-x: auto;
+              }
+
+              .full-table {
+                min-width: 900px; /* force table wider than screen if needed */
+                width: 100%;
+              }
+
+              table td {
+                vertical-align: top;
               }
             </style>
           </div>
