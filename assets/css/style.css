@@ -10929,6 +10929,8 @@ blockquote.vs-quote .quote-author {
 @media (max-width: 991px) {
   .event-style2 .event-img .img {
     width: 100%;
+    object-fit: fill;
+
   }
 }
 .event-style2 .event-img .event-title {
